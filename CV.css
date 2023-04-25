@@ -1,0 +1,123 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+.top-line{
+    width: 100%;
+    height: 7px;
+    background-color: #005889;
+}
+div.nume-prenume{
+    font-size: 26px;
+    font-weight: bold;
+    margin-left: 48px;
+    margin-top: 36px;
+}
+div.nume-prenume span :first-child{
+    color: #101214;
+}
+.prenume{
+    color: #005889;
+}
+.adresa{
+    margin-left: 73px;
+    font-size: 18px;
+}
+.adresa ul{
+    display: inline-block;
+    padding-left: 20px;
+    margin: 0;
+}
+.email{
+    font-weight: bold;
+    margin-left: 73px;
+    font-size: 18px;
+}
+.email ul{
+    display: inline-block;
+    margin: 0;
+    padding-left: 20px;
+    color: #005889;
+}
+[class$="container"]
+{
+    font-weight: bold;
+    color:#005889;
+    margin-left:48px;
+    font-size: 17px;
+    padding-top: 10px;
+}
+[class$="second"]
+{
+    margin-left: 73px;
+    margin-bottom:0px;
+    font-size: 15px;
+    color:#005889;
+}
+.experienta-container ul{
+    font-weight: bold;
+    margin-left: 55px;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.experienta-second{
+    margin-left: 95px;
+}
+.sub-educatie-second{
+    color: #101214;
+}
+.an-1-item,.an-2-item,.an-3-item{
+    margin-left: 55px;
+}
+[class$="row"]
+{
+    display: inline-block;
+    width: 30%;
+    vertical-align:top
+}
+.display-1-row{
+    margin-left: 73px;
+}
+[class$="oreder"]
+{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-left: 20px;
+}.display-1-row ul,.display-2-row ul,.display-3-row ul{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-left: 20px;
+}
+[class$="display"]
+{
+    font-size: 15px;
+    padding-left: 20px;
+}
+.paragraph-1-display p,.paragraph-2-display p,.paragraph-3-display p{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+[class$=pozitie]
+{
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 60px;
+    color: #101214;
+}
+[class$=experienta]
+{
+    font-size: 15px;
+    margin-left: 95px;
+    color: #101214;
+}
+[class$=text]
+{
+    margin-left: 73px;
+    color: #101214;
+    font-size: 15px;
+}
