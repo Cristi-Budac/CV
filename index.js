@@ -1,13 +1,16 @@
 // 1. Scrieți o funcție care creează un obiect pentru a păstra informații despre rețeta ta preferată
-const functie = {
-  titlu: "Burger",
-  portii: 5,
-  ingrediente: ["carne", "chedar", "salata", "sos", "chifla"],
-};
-console.log(functie.titlu);
-console.log(functie.portii);
-console.log(functie.ingrediente);
 
+function makeObject(titlu, portie, ingrediente) {
+  let myObject = {};
+
+  myObject.titlu = titlu;
+  myObject.portie = portie;
+  myObject.ingrediente = ingrediente;
+  return myObject;
+}
+
+const rezultat = makeObject("burger", 4, ["carne", "chedar", "salata"]);
+console.log(rezultat);
 // 2. Scrieți o funcție care returnează un obiect nou fără proprietățile furnizate
 
 // Exemplu 1;
