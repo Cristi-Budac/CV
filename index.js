@@ -1,75 +1,43 @@
-// A DOUA TEMA IN JAVA SCRIPT
+// 1. Scrieți o funcție care creează un obiect pentru a păstra informații despre rețeta ta preferată
+const functie = {
+  titlu: "Burger",
+  portii: 5,
+  ingrediente: ["carne", "chedar", "salata", "sos", "chifla"],
+};
+console.log(functie.titlu);
+console.log(functie.portii);
+console.log(functie.ingrediente);
 
-// Tipăriți toate numerele pare de la 0 la 10
-// Exemplu 1:
-function numerePare(range) {
-  let count = 0;
-  while (range > 0) {
-    if (range % 2 === 0) {
-      count++;
-      console.log(range);
-    }
-    range--;
-  }
-  return count;
-}
-console.log(numerePare(10));
+// 2. Scrieți o funcție care returnează un obiect nou fără proprietățile furnizate
 
-// 2. Calculați suma numerelor dintr-un șir de numere
+// Exemplu 1;
+const user = {
+  obiect1: "Burger",
+  obiect2: ["carne", "chifla", "salata", "sos"],
+};
+delete user.obiect1;
+console.log(user);
 
-function sumaNumerelor(num) {
-  let index = 0;
-  let sum = 0;
-  while (index < num.length) {
-    sum = sum + num[index];
-    index++;
-  }
-  return "sum =" + sum;
-}
-num1 = [1, 3, -50, 100, -20, 20];
-num2 = [3, 4, 3, -20, -13, 59, 12];
-console.log(sumaNumerelor(num1));
-console.log(sumaNumerelor(num2));
-
-// 3. Creați o funcție care inversează un șir de numere
-range = [1, 5, -23, 5, -15, 28, 5];
-function inversare(array2) {
-  let newRange = [];
-  let index = 0;
-  let newIndex = array2.length - 1;
-  while (index < array2.length) {
-    newRange[index] = array2[newIndex];
-    index++;
-    newIndex--;
-  }
-  return "numar inversat este " + newRange;
-}
-console.log(inversare(range));
-// 4. Returnează numărul de vocale dintr-un șir de caractere (string)
-
-// Exemplul 1:
-function doarVocale(string) {
-  let count = 0;
-  const vocale = [`a`, `e`, `i`, `o`, `u`];
-  for (let num of string) {
-    if (vocale.includes(num)) {
-      count++;
-    }
-  }
-  return count;
-}
-console.log(doarVocale(`eu mananc doar orez`));
-
-// Exemplul 2:
-function numaratoareVocale(sir) {
-  let count = 0;
-  const vocale = "aeiou";
-  for (let i = 0; i < sir.length; i++) {
-    if (vocale.indexOf(sir[i]) !== -1) {
-      count++;
-    }
-  }
-  return count;
+// Exemplu 2:
+const user1 = {
+  proprietatea1: "Burger",
+  proprietatea2: ["carne", "chifla", "salata", "sos"],
+};
+const keys = Object.keys(user1);
+for (let i = 0; i < keys.length; i++) {
+  console.log(user1[keys[1]]);
 }
 
-console.log(numaratoareVocale("Cate vocale sunt in acest exemplu"));
+//Creați o șir de obiecte în care fiecare obiect descrie o carte și are proprietăți,precum titlu,autor si este citita.
+const carti = [
+  { titlu: "Hobbitul", autor: "J.R.R. Tolkien", esteCitita: true },
+  { titlu: "Hobbitul", autor: "J.R.R. Tolkien", esteCitita: false },
+];
+
+for (let i = 0; i < carti.length; i++) {
+  if (carti[i].esteCitita === true) {
+    console.log(`Ai citit deja ${carti[i].titlu}de ${carti[i].autor}`);
+  } else if (carti[i].esteCitita === false) {
+    console.log(`Trebuie sa citesti ${carti[i].titlu}de ${carti[i].autor}`);
+  }
+}
